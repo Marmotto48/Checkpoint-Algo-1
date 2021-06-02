@@ -1,0 +1,68 @@
+ALGORITHM Letter count 1
+VAR
+    LCount : INTEGER :=0;   
+    sentence : STRING := "Lorem ipsun dolor.";
+BEGIN
+    FOR l FROM "a" TO "z" STEP step  DO
+        Lcount := Lcount +1 ;
+    END_FOR
+END
+
+
+
+
+
+ALGORITHM Letter count 2
+VAR
+    LCount : INTEGER :=0;
+    sentence : STRING := "Lorem ipsun dolor.";
+BEGIN 
+    FOR (CHAR letter == "a" -> "z";  letter++)
+        FOR (int i := 0; i< sentence.length; i++)
+            IF (sentence[i] == letter) THEN
+                Lcount++;
+            END_IF
+        END_FOR
+    END_FOR
+    Write ("letters' numbers are:" Lcount)
+END
+
+
+
+
+
+
+ALGORITHM Word count   // count the space between the words and add 1 for the last word
+VAR
+    WCount : INTEGER :=0;
+    sentence : STRING := "Lorem ipsun dolor.";
+BEGIN
+    FOR (int i := 0; i< sentence.length; i++)
+        IF (sentence[i] == ' ') THEN
+            WCount++;
+        END_IF
+    WCount++ // to count the last word
+    END_FOR
+    Write ("words' numbers are:" Wcount)
+END
+
+
+
+
+
+ALGORITHM number of vowels  
+VAR 
+    sentence : STRING := "Lorem ipsun dolor.";
+    VCount : INTEGER :=0; 
+BEGIN
+
+    FOR (int i := 0; i< sentence.length; i++)
+        IF (letters[i] == "a" or "e" or "i" or "o" or "u"  ) THEN
+            VCount++;
+        END_IF
+    END_FOR
+    Write ("vowels' numbers are:" vcount)
+END
+
+
+
