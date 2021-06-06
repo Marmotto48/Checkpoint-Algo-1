@@ -1,16 +1,3 @@
-ALGORITHM Letter count 1
-VAR
-    LCount : INTEGER :=0;   
-    sentence : STRING := "Lorem ipsun dolor.";
-BEGIN
-    FOR l FROM "a" TO "z" STEP step  DO
-        Lcount := Lcount +1 ;
-    END_FOR
-END
-
-
-
-
 
 ALGORITHM Letter count 2
 VAR
